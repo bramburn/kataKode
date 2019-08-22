@@ -7,15 +7,16 @@ import java.io.File
 import kotlin.reflect.typeOf
 
 class BasicTest {
+    private val filename:String ="kaps.txt"
    @Test
     fun hello(){
         assertTrue(true)
     }
-    
+
     @BeforeEach
     fun bef(){
-        val filename = "kaps.txt"
-        var f: File = File(filename)
+
+        var f: File = File(this.filename)
 
         var x:Boolean =f.createNewFile()
 
@@ -29,8 +30,8 @@ class BasicTest {
 //    Delete the file at the end
     @AfterEach
     fun deltxt(){
-        val filename= "kaps.txt"
-        var f:File = File(filename)
+
+        var f:File = File(this.filename)
         var x:Boolean = f.delete()
         println(x)
         assertTrue(x)

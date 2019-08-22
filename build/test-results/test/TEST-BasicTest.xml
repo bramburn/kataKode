@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="BasicTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-22T14:57:08" hostname="DESKTOP-0JATF6U" time="0.022">
-  <properties/>
-  <testcase name="hello()" classname="BasicTest" time="0.022"/>
-  <system-out><![CDATA[true
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
